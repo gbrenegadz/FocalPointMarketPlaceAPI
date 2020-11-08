@@ -13,6 +13,8 @@ import lombok.Data;
 @Data
 @Table(name = "user_info", schema = "gilbert_p_renegado")
 public class UserInfoEntity {
+	
+	public static final String ID = "id";
 
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)

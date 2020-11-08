@@ -1,9 +1,12 @@
 package com.example.demo.services;
 
-import java.awt.print.Pageable;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entities.UserInfoEntity;
@@ -46,6 +49,12 @@ public class UserInfoServiceImpl implements UserInfoService {
 		return null;
 	}
 
+	@Override
+	public Page<UserInfoEntity> listAllUsers(int pageNumber) {
+		PageRequest pageable = PageRequest.of(pageNumber, 10, Sort.by(UserInfoEntity.ID).ascending());
+		return repository.findAll(pageable);
+	}
+	
 	@Override
 	public List<UserInfoEntity> findUserByName(String name, Pageable pageable) {
 		// TODO Auto-generated method stub
