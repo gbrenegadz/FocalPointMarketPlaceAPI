@@ -1,0 +1,186 @@
+2020-11-10 02:27:24.539  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 8480 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-10 02:27:24.540  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-10 02:27:24.790  INFO 8480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-10 02:27:24.806  INFO 8480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 2 JPA repository interfaces.
+2020-11-10 02:27:24.844  WARN 8480 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-10 02:27:24.916  INFO 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-10 02:27:24.916  INFO 8480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-10 02:27:24.916  INFO 8480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-10 02:27:24.945  INFO 8480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-10 02:27:24.945  INFO 8480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 398 ms
+2020-11-10 02:27:24.964  INFO 8480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-10 02:27:25.037  INFO 8480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-10 02:27:25.037  INFO 8480 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-10 02:27:25.076  INFO 8480 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-10 02:27:25.093  INFO 8480 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-10 02:27:25.102  INFO 8480 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-10 02:27:25.136  WARN 8480 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-10 02:27:25.136  WARN 8480 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-10 02:27:25.236  INFO 8480 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-10 02:27:25.238  INFO 8480 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-10 02:27:25.289  INFO 8480 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-10 02:27:25.300  WARN 8480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 02:27:25.481  INFO 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-10 02:27:25.481  INFO 8480 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-10 02:27:25.512  INFO 8480 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-10 02:27:25.517  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.038 seconds (JVM running for 73.314)
+2020-11-10 02:27:25.518  INFO 8480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-10 02:27:32.086  INFO 8480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-10 02:27:32.087  INFO 8480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-10 02:27:32.121  INFO 8480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2020-11-10 02:27:32.165  INFO 8480 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Begin List Users
+2020-11-10 02:27:32.400  INFO 8480 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : End List Users
+2020-11-10 02:28:02.193  INFO 8480 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-10 02:28:02.193  INFO 8480 --- [Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-10 02:28:02.194  INFO 8480 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-10 02:28:02.200  INFO 8480 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-10 02:28:02.286  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 8480 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-10 02:28:02.287  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-10 02:28:02.525  INFO 8480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-10 02:28:02.539  INFO 8480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 2 JPA repository interfaces.
+2020-11-10 02:28:02.574  WARN 8480 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-10 02:28:02.640  INFO 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-10 02:28:02.643  INFO 8480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-10 02:28:02.645  INFO 8480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-10 02:28:02.704  INFO 8480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-10 02:28:02.704  INFO 8480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 415 ms
+2020-11-10 02:28:02.752  INFO 8480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-10 02:28:02.819  INFO 8480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-10 02:28:02.819  INFO 8480 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-10 02:28:02.856  INFO 8480 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-10 02:28:02.870  INFO 8480 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-10 02:28:02.883  INFO 8480 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-10 02:28:02.913  WARN 8480 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-10 02:28:02.913  WARN 8480 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-10 02:28:03.016  INFO 8480 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-10 02:28:03.017  INFO 8480 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-10 02:28:03.071  INFO 8480 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-10 02:28:03.084  WARN 8480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 02:28:03.237  INFO 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-10 02:28:03.238  INFO 8480 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-10 02:28:03.265  INFO 8480 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-10 02:28:03.268  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.015 seconds (JVM running for 111.066)
+2020-11-10 02:28:03.270  INFO 8480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-10 02:28:06.879  INFO 8480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-10 02:28:06.879  INFO 8480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-10 02:28:06.882  INFO 8480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-11-10 02:28:06.883  INFO 8480 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Begin List Users
+2020-11-10 02:28:06.894 ERROR 8480 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : End List Users
+2020-11-10 02:28:50.743  INFO 8480 --- [http-nio-8080-exec-2] com.example.demo.api.UserInfoController  : Begin List Users
+2020-11-10 02:28:50.750 ERROR 8480 --- [http-nio-8080-exec-2] com.example.demo.api.UserInfoController  : End List Users
+2020-11-10 02:28:52.418  INFO 8480 --- [http-nio-8080-exec-3] com.example.demo.api.UserInfoController  : Begin List Users
+2020-11-10 02:28:52.425 ERROR 8480 --- [http-nio-8080-exec-3] com.example.demo.api.UserInfoController  : End List Users
+2020-11-10 02:28:53.602  INFO 8480 --- [http-nio-8080-exec-4] com.example.demo.api.UserInfoController  : Begin List Users
+2020-11-10 02:28:53.610 ERROR 8480 --- [http-nio-8080-exec-4] com.example.demo.api.UserInfoController  : End List Users
+2020-11-10 02:28:58.039  INFO 8480 --- [http-nio-8080-exec-5] com.example.demo.api.UserInfoController  : Begin List Users
+2020-11-10 02:28:58.046 ERROR 8480 --- [http-nio-8080-exec-5] com.example.demo.api.UserInfoController  : End List Users
+2020-11-10 02:29:24.285  INFO 8480 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-10 02:29:24.286  INFO 8480 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-10 02:29:24.286  INFO 8480 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-10 02:29:24.293  INFO 8480 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-10 02:29:24.382  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 8480 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-10 02:29:24.382  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-10 02:29:24.680  INFO 8480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-10 02:29:24.716  INFO 8480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 2 JPA repository interfaces.
+2020-11-10 02:29:24.830  WARN 8480 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-10 02:29:24.935  INFO 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-10 02:29:24.936  INFO 8480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-10 02:29:24.936  INFO 8480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-10 02:29:24.965  INFO 8480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-10 02:29:24.966  INFO 8480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 581 ms
+2020-11-10 02:29:24.987  INFO 8480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-10 02:29:25.073  INFO 8480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-10 02:29:25.073  INFO 8480 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-10 02:29:25.104  INFO 8480 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-10 02:29:25.112  INFO 8480 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-10 02:29:25.121  INFO 8480 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-10 02:29:25.150  WARN 8480 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-10 02:29:25.150  WARN 8480 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-10 02:29:25.250  INFO 8480 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-10 02:29:25.251  INFO 8480 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-10 02:29:25.345  INFO 8480 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-10 02:29:25.365  WARN 8480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 02:29:25.596  INFO 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-10 02:29:25.596  INFO 8480 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-10 02:29:25.625  INFO 8480 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-10 02:29:25.629  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.28 seconds (JVM running for 193.427)
+2020-11-10 02:29:25.632  INFO 8480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-10 02:29:32.200  INFO 8480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-10 02:29:32.201  INFO 8480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-10 02:29:32.203  INFO 8480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-11-10 02:29:32.204  INFO 8480 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : List Users => Begin
+2020-11-10 02:29:32.214 ERROR 8480 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : List Users => Begin
+2020-11-10 02:29:40.854  INFO 8480 --- [http-nio-8080-exec-2] com.example.demo.api.UserInfoController  : List Users => Begin
+2020-11-10 02:29:40.862 ERROR 8480 --- [http-nio-8080-exec-2] com.example.demo.api.UserInfoController  : List Users => Begin
+2020-11-10 02:29:47.206  INFO 8480 --- [Thread-37] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-10 02:29:47.207  INFO 8480 --- [Thread-37] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-10 02:29:47.207  INFO 8480 --- [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-10 02:29:47.214  INFO 8480 --- [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-10 02:29:47.356  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 8480 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-10 02:29:47.356  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-10 02:29:47.615  INFO 8480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-10 02:29:47.633  INFO 8480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 2 JPA repository interfaces.
+2020-11-10 02:29:47.669  WARN 8480 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-10 02:29:47.739  INFO 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-10 02:29:47.739  INFO 8480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-10 02:29:47.739  INFO 8480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-10 02:29:47.764  INFO 8480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-10 02:29:47.764  INFO 8480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 401 ms
+2020-11-10 02:29:47.781  INFO 8480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-10 02:29:47.831  INFO 8480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-10 02:29:47.831  INFO 8480 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-10 02:29:47.858  INFO 8480 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-10 02:29:47.865  INFO 8480 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-10 02:29:47.872  INFO 8480 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-10 02:29:47.896  WARN 8480 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-10 02:29:47.897  WARN 8480 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-10 02:29:48.000  INFO 8480 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-10 02:29:48.002  INFO 8480 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-10 02:29:48.034  INFO 8480 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-10 02:29:48.083  WARN 8480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 02:29:48.319  INFO 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-10 02:29:48.319  INFO 8480 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-10 02:29:48.352  INFO 8480 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-10 02:29:48.358  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.074 seconds (JVM running for 216.156)
+2020-11-10 02:29:48.360  INFO 8480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-10 02:29:51.014  INFO 8480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-10 02:29:51.014  INFO 8480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-10 02:29:51.016  INFO 8480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-11-10 02:29:51.017  INFO 8480 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : List Users => Begin
+2020-11-10 02:29:51.028 ERROR 8480 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : List Users => End
+2020-11-10 02:30:08.036  INFO 8480 --- [Thread-45] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-10 02:30:08.036  INFO 8480 --- [Thread-45] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-10 02:30:08.037  INFO 8480 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-10 02:30:08.043  INFO 8480 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-10 02:30:08.131  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 8480 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-10 02:30:08.131  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-10 02:30:08.357  INFO 8480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-10 02:30:08.375  INFO 8480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 2 JPA repository interfaces.
+2020-11-10 02:30:08.419  WARN 8480 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-10 02:30:08.483  INFO 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-10 02:30:08.483  INFO 8480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-10 02:30:08.484  INFO 8480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-10 02:30:08.510  INFO 8480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-10 02:30:08.510  INFO 8480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 377 ms
+2020-11-10 02:30:08.527  INFO 8480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-10 02:30:08.575  INFO 8480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-10 02:30:08.575  INFO 8480 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-10 02:30:08.604  INFO 8480 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-10 02:30:08.611  INFO 8480 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-10 02:30:08.617  INFO 8480 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-10 02:30:08.643  WARN 8480 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-10 02:30:08.643  WARN 8480 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-10 02:30:08.737  INFO 8480 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-10 02:30:08.738  INFO 8480 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-10 02:30:08.786  INFO 8480 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-10 02:30:08.809  WARN 8480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 02:30:08.960  INFO 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-10 02:30:08.960  INFO 8480 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-10 02:30:08.986  INFO 8480 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-10 02:30:08.989  INFO 8480 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.89 seconds (JVM running for 236.787)
+2020-11-10 02:30:08.991  INFO 8480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-10 02:30:12.348  INFO 8480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-10 02:30:12.349  INFO 8480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-10 02:30:12.350  INFO 8480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-11-10 02:30:12.352  INFO 8480 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : List Users => Begin
+2020-11-10 02:30:12.366  INFO 8480 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : List Users => End

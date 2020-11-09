@@ -14,6 +14,9 @@ import com.example.demo.entities.UserInfoEntity;
 import com.example.demo.services.UserInfoService;
 import com.example.dto.UserInfoCreateResponseDto;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @RestController
 @RequestMapping(value = "/user")
 public class UserInfoController {
@@ -25,8 +28,9 @@ public class UserInfoController {
 			produces = "application/json",
 			method = RequestMethod.POST)
 	public ResponseEntity<Page<UserInfoEntity>> listUsers(@Validated @RequestParam(name = "pageNumber") int pageNumber) {
+		log.info("List Users => Begin");
 		Page<UserInfoEntity> response = service.listAllUsers(pageNumber);
-		
+		log.info("List Users => End");
 		return new ResponseEntity<Page<UserInfoEntity>>(response, HttpStatus.OK);
 	}
 

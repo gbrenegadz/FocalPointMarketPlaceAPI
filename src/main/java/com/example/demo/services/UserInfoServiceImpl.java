@@ -13,6 +13,8 @@ import com.example.demo.entities.UserInfoEntity;
 import com.example.demo.repositories.UserInfoRepository;
 import com.example.dto.UserInfoCreateResponseDto;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
 public class UserInfoServiceImpl implements UserInfoService {
 
