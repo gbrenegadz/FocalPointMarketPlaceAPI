@@ -9,11 +9,11 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import com.example.demo.dto.UserInfoCreateRequestDto;
+import com.example.demo.dto.UserInfoCreateResponseDto;
 import com.example.demo.entities.UserInfoEntity;
 import com.example.demo.repositories.UserInfoRepository;
-import com.example.dto.UserInfoCreateResponseDto;
-
-import lombok.extern.slf4j.Slf4j;
+import com.example.demo.utils.LocalDateTimeAttributeConverter;
 
 @Service
 public class UserInfoServiceImpl implements UserInfoService {
@@ -22,7 +22,18 @@ public class UserInfoServiceImpl implements UserInfoService {
 	UserInfoRepository repository;
 	
 	@Override
-	public UserInfoCreateResponseDto createUser(UserInfoEntity user) {
+	public UserInfoCreateResponseDto createUser(UserInfoCreateRequestDto request) {
+		LocalDateTimeAttributeConverter localDateTimeConverter = new LocalDateTimeAttributeConverter();
+		
+		UserInfoEntity user = new UserInfoEntity();
+		user.setGivenName(request.getGivenName());
+		user.setFamilyName(request.getFamilyName());
+		user.setFullName(request.getFullName());
+		user.setEmail(request.getEmail());
+		user.setImageUrl(request.getImageUrl());
+		user.setCreatedDatetime(localDateTimeConverter.convertToDatabaseColumn(request.getCreatedDatetime()));
+		user.setModifiedDatetime(localDateTimeConverter.convertToDatabaseColumn(request.getModifiedDatetime()));
+		
 		UserInfoCreateResponseDto createdUser = new UserInfoCreateResponseDto(repository.save(user));
 		return createdUser;
 	}

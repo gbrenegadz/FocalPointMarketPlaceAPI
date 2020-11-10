@@ -1,5 +1,7 @@
 package com.example.demo.entities;
 
+import java.sql.Timestamp;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -34,4 +36,10 @@ public class UserInfoEntity {
 	
 	@Column(name = "IMAGE_URL", nullable = false, length = 500)
     private String imageUrl;
+	
+	@Column(name = "CREATED_DATETIME", nullable = false)
+    private Timestamp createdDatetime;
+	
+	@Column(name = "MODIFIED_DATETIME", nullable = false)
+    private Timestamp modifiedDatetime;
 }

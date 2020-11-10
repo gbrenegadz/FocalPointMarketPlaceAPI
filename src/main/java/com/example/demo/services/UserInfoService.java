@@ -5,12 +5,13 @@ import java.util.List;
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
 import org.springframework.data.domain.Page;
 
+import com.example.demo.dto.UserInfoCreateRequestDto;
+import com.example.demo.dto.UserInfoCreateResponseDto;
 import com.example.demo.entities.UserInfoEntity;
-import com.example.dto.UserInfoCreateResponseDto;
 
 public interface UserInfoService {
 
-	public abstract UserInfoCreateResponseDto createUser(UserInfoEntity user);
+	public abstract UserInfoCreateResponseDto createUser(UserInfoCreateRequestDto request);
 	
 	public abstract UserInfoEntity updateUser(UserInfoEntity user);
 	

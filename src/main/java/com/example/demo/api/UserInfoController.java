@@ -5,14 +5,16 @@ import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.dto.UserInfoCreateRequestDto;
+import com.example.demo.dto.UserInfoCreateResponseDto;
 import com.example.demo.entities.UserInfoEntity;
 import com.example.demo.services.UserInfoService;
-import com.example.dto.UserInfoCreateResponseDto;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -24,27 +26,23 @@ public class UserInfoController {
 	@Autowired
 	UserInfoService service;
 
-	@RequestMapping(value = "/",
-			produces = "application/json",
-			method = RequestMethod.POST)
+	@RequestMapping(method = RequestMethod.GET,
+			produces = "application/json")
 	public ResponseEntity<Page<UserInfoEntity>> listUsers(@Validated @RequestParam(name = "pageNumber") int pageNumber) {
 		log.info("List Users => Begin");
 		Page<UserInfoEntity> response = service.listAllUsers(pageNumber);
+		
 		log.info("List Users => End");
 		return new ResponseEntity<Page<UserInfoEntity>>(response, HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/create", produces = "application/json", method = RequestMethod.POST)
-	public ResponseEntity<UserInfoCreateResponseDto> createUser(@Validated @RequestParam(name = "name") String name) {
-		UserInfoEntity user = new UserInfoEntity();
-		user.setGivenName("Gilbert");
-		user.setFamilyName("Renegad");
-		user.setFullName("Gilbert Renegado");
-		user.setEmail("email@email.com");
-		user.setImageUrl("imageUrl");
-
-		UserInfoCreateResponseDto response = service.createUser(user);
-
+	@RequestMapping(method = RequestMethod.POST, 
+			produces = "application/json")
+	public ResponseEntity<UserInfoCreateResponseDto> createUser(@Validated @RequestBody UserInfoCreateRequestDto request) {
+		log.info("Create Users => Begin");
+		UserInfoCreateResponseDto response = service.createUser(request);
+		
+		log.info("Create Users => End");
 		return new ResponseEntity<UserInfoCreateResponseDto>(response, HttpStatus.OK);
 	}
 }
