@@ -31,7 +31,6 @@ public class UserInfoController {
 	public ResponseEntity<Page<UserInfoEntity>> listUsers(@Validated @RequestParam(name = "pageNumber") int pageNumber) {
 		log.info("List Users => Begin");
 		Page<UserInfoEntity> response = service.listAllUsers(pageNumber);
-		
 		log.info("List Users => End");
 		return new ResponseEntity<Page<UserInfoEntity>>(response, HttpStatus.OK);
 	}
@@ -41,7 +40,6 @@ public class UserInfoController {
 	public ResponseEntity<UserInfoCreateResponseDto> createUser(@Validated @RequestBody UserInfoCreateRequestDto request) {
 		log.info("Create Users => Begin");
 		UserInfoCreateResponseDto response = service.createUser(request);
-		
 		log.info("Create Users => End");
 		return new ResponseEntity<UserInfoCreateResponseDto>(response, HttpStatus.OK);
 	}

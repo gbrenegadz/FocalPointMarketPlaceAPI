@@ -1,690 +1,293 @@
-2020-11-11 00:03:11.214  INFO 4928 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:03:11.221  INFO 4928 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:03:11.223  INFO 4928 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:03:11.232  INFO 4928 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:03:11.323  INFO 4928 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 4928 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:03:11.324  INFO 4928 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:03:11.569  INFO 4928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:03:11.583  INFO 4928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 2 JPA repository interfaces.
-2020-11-11 00:03:11.623  WARN 4928 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:03:11.699  INFO 4928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:03:11.700  INFO 4928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:03:11.700  INFO 4928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:03:11.725  INFO 4928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:03:11.725  INFO 4928 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 398 ms
-2020-11-11 00:03:11.742  INFO 4928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:03:11.823  INFO 4928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:03:11.823  INFO 4928 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:03:11.854  INFO 4928 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:03:11.862  INFO 4928 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:03:11.869  INFO 4928 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:03:11.902  WARN 4928 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:03:11.902  WARN 4928 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:03:12.005  INFO 4928 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:03:12.007  INFO 4928 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:03:12.040  INFO 4928 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:03:12.073  WARN 4928 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:03:12.251  INFO 4928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:03:12.252  INFO 4928 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:03:12.279  INFO 4928 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:03:12.282  INFO 4928 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.996 seconds (JVM running for 287.469)
-2020-11-11 00:03:12.284  INFO 4928 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-11 00:04:41.392  INFO 4928 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:04:41.392  INFO 4928 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:04:41.393  INFO 4928 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:04:41.400  INFO 4928 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:04:41.487  INFO 4928 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 4928 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:04:41.487  INFO 4928 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:04:41.724  INFO 4928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:04:41.739  INFO 4928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 JPA repository interfaces.
-2020-11-11 00:04:41.775  WARN 4928 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:04:41.837  INFO 4928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:04:41.838  INFO 4928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:04:41.838  INFO 4928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:04:41.865  INFO 4928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:04:41.866  INFO 4928 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 376 ms
-2020-11-11 00:04:41.884  INFO 4928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:04:41.941  INFO 4928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:04:41.942  INFO 4928 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:04:41.970  INFO 4928 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:04:41.977  INFO 4928 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:04:41.990  INFO 4928 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:04:42.019  WARN 4928 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:04:42.019  WARN 4928 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:04:42.120  INFO 4928 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:04:42.122  INFO 4928 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:04:42.152  INFO 4928 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:04:42.191  WARN 4928 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:04:42.366  INFO 4928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:04:42.366  INFO 4928 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:04:42.408  INFO 4928 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:04:42.412  INFO 4928 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.958 seconds (JVM running for 377.598)
-2020-11-11 00:04:42.414  INFO 4928 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-11 00:04:43.699  INFO 4928 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2020-11-11 00:04:43.762  INFO 4928 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:04:43.762  INFO 4928 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:04:43.763  INFO 4928 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:04:43.772  INFO 4928 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:06:19.675  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 5280 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:06:19.677  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:06:19.724  INFO 5280 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.3.0.0\967c0b1a2d5b1435324de34a9b8018d294f8f47b\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.3.0.0/967c0b1a2d5b1435324de34a9b8018d294f8f47b/oraclepki.jar
-2020-11-11 00:06:19.724  INFO 5280 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.security\oraclepki\19.3.0.0\e52a34f271c6c62ee1a73b71cc19da5459b709f\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_cert.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_cert.jar
-2020-11-11 00:06:19.724  INFO 5280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-11 00:06:20.514  INFO 5280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:06:20.571  INFO 5280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 2 JPA repository interfaces.
-2020-11-11 00:06:20.739  WARN 5280 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:06:21.217  INFO 5280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:06:21.225  INFO 5280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:06:21.226  INFO 5280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:06:21.342  INFO 5280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:06:21.343  INFO 5280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1618 ms
-2020-11-11 00:06:21.450  INFO 5280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:06:21.717  INFO 5280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:06:21.722  INFO 5280 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:06:21.995  INFO 5280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:06:22.050  INFO 5280 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:06:22.124  INFO 5280 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
-2020-11-11 00:06:22.285  INFO 5280 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-11-11 00:06:22.400  INFO 5280 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:06:22.673  WARN 5280 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:06:22.674  WARN 5280 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:06:23.181  INFO 5280 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:06:23.189  INFO 5280 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:06:23.481  INFO 5280 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:06:23.608  WARN 5280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:06:24.210  INFO 5280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:06:24.211  INFO 5280 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:06:24.288  INFO 5280 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:06:24.295  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 4.991 seconds (JVM running for 5.963)
-2020-11-11 00:06:41.182  INFO 5280 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-11 00:06:41.183  INFO 5280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-11 00:06:41.209  INFO 5280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
-2020-11-11 00:06:41.337  WARN 5280 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required UserInfoCreateRequestDto parameter 'request' is not present]
-2020-11-11 00:07:54.625  WARN 5280 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required UserInfoCreateRequestDto parameter 'request' is not present]
-2020-11-11 00:10:03.224  WARN 5280 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required UserInfoCreateRequestDto parameter 'request' is not present]
-2020-11-11 00:12:04.115  INFO 5280 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:12:04.117  INFO 5280 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:12:04.119  INFO 5280 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:12:04.127  INFO 5280 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:12:04.225  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 5280 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:12:04.225  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:12:04.545  INFO 5280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:12:04.561  INFO 5280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 2 JPA repository interfaces.
-2020-11-11 00:12:04.608  WARN 5280 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:12:04.691  INFO 5280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:12:04.692  INFO 5280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:12:04.692  INFO 5280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:12:04.723  INFO 5280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:12:04.723  INFO 5280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 495 ms
-2020-11-11 00:12:04.740  INFO 5280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:12:04.816  INFO 5280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:12:04.816  INFO 5280 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:12:04.848  INFO 5280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:12:04.856  INFO 5280 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:12:04.864  INFO 5280 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:12:04.895  WARN 5280 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:12:04.895  WARN 5280 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:12:05.003  INFO 5280 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:12:05.004  INFO 5280 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:12:05.058  INFO 5280 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:12:05.082  WARN 5280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:12:05.370  INFO 5280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:12:05.371  INFO 5280 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:12:05.432  INFO 5280 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:12:05.439  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.253 seconds (JVM running for 347.108)
-2020-11-11 00:12:05.447  INFO 5280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-11 00:12:37.009  INFO 5280 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:12:37.009  INFO 5280 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:12:37.010  INFO 5280 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:12:37.016  INFO 5280 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:12:37.100  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 5280 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:12:37.101  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:12:37.343  INFO 5280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:12:37.357  INFO 5280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 2 JPA repository interfaces.
-2020-11-11 00:12:37.401  WARN 5280 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:12:37.490  INFO 5280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:12:37.490  INFO 5280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:12:37.490  INFO 5280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:12:37.515  INFO 5280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:12:37.515  INFO 5280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 411 ms
-2020-11-11 00:12:37.533  INFO 5280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:12:37.586  INFO 5280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:12:37.586  INFO 5280 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:12:37.614  INFO 5280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:12:37.622  INFO 5280 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:12:37.628  INFO 5280 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:12:37.658  WARN 5280 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:12:37.658  WARN 5280 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:12:37.758  INFO 5280 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:12:37.760  INFO 5280 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:12:37.790  INFO 5280 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:12:37.824  WARN 5280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:12:37.988  INFO 5280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:12:37.989  INFO 5280 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:12:38.016  INFO 5280 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:12:38.019  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.954 seconds (JVM running for 379.686)
-2020-11-11 00:12:38.020  INFO 5280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-11 00:12:51.530  INFO 5280 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:12:51.531  INFO 5280 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:12:51.531  INFO 5280 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:12:51.538  INFO 5280 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:12:51.616  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 5280 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:12:51.617  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:12:51.889  INFO 5280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:12:51.903  INFO 5280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 JPA repository interfaces.
-2020-11-11 00:12:51.943  WARN 5280 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:12:52.017  INFO 5280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:12:52.017  INFO 5280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:12:52.017  INFO 5280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:12:52.047  INFO 5280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:12:52.048  INFO 5280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 428 ms
-2020-11-11 00:12:52.068  INFO 5280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:12:52.120  INFO 5280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:12:52.121  INFO 5280 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:12:52.149  INFO 5280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:12:52.155  INFO 5280 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:12:52.161  INFO 5280 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:12:52.188  WARN 5280 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:12:52.189  WARN 5280 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:12:52.286  INFO 5280 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:12:52.287  INFO 5280 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:12:52.321  INFO 5280 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:12:52.351  WARN 5280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:12:52.531  INFO 5280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:12:52.532  INFO 5280 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:12:52.560  INFO 5280 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:12:52.565  INFO 5280 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.978 seconds (JVM running for 394.232)
-2020-11-11 00:12:52.566  INFO 5280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-11 00:12:52.992  INFO 5280 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2020-11-11 00:12:53.055  INFO 5280 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:12:53.055  INFO 5280 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:12:53.056  INFO 5280 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:12:53.068  INFO 5280 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:12:57.699  INFO 12256 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 12256 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:12:57.701  INFO 12256 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:12:57.747  INFO 12256 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.3.0.0\967c0b1a2d5b1435324de34a9b8018d294f8f47b\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.3.0.0/967c0b1a2d5b1435324de34a9b8018d294f8f47b/oraclepki.jar
-2020-11-11 00:12:57.747  INFO 12256 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.security\oraclepki\19.3.0.0\e52a34f271c6c62ee1a73b71cc19da5459b709f\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_cert.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_cert.jar
-2020-11-11 00:12:57.747  INFO 12256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-11 00:12:58.500  INFO 12256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:12:58.554  INFO 12256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 2 JPA repository interfaces.
-2020-11-11 00:12:58.709  WARN 12256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:12:59.190  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:12:59.200  INFO 12256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:12:59.200  INFO 12256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:12:59.321  INFO 12256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:12:59.321  INFO 12256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1573 ms
-2020-11-11 00:12:59.434  INFO 12256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:12:59.699  INFO 12256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:12:59.703  INFO 12256 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:12:59.929  INFO 12256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:12:59.986  INFO 12256 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:13:00.081  INFO 12256 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
-2020-11-11 00:13:00.255  INFO 12256 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-11-11 00:13:00.371  INFO 12256 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:13:00.680  WARN 12256 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:13:00.681  WARN 12256 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:13:01.194  INFO 12256 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:13:01.203  INFO 12256 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:13:01.487  INFO 12256 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:13:01.611  WARN 12256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:13:02.232  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:13:02.233  INFO 12256 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:13:02.313  INFO 12256 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:13:02.322  INFO 12256 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 4.983 seconds (JVM running for 5.998)
-2020-11-11 00:13:06.626  INFO 12256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-11 00:13:06.626  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-11 00:13:06.650  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
-2020-11-11 00:13:06.733  WARN 12256 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required UserInfoCreateRequestDto parameter 'request' is not present]
-2020-11-11 00:14:07.173  INFO 12256 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:14:07.174  INFO 12256 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:14:07.176  INFO 12256 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:14:07.185  INFO 12256 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:14:07.267  INFO 12256 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 12256 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:14:07.267  INFO 12256 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:14:07.531  INFO 12256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:14:07.546  INFO 12256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 JPA repository interfaces.
-2020-11-11 00:14:07.588  WARN 12256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:14:07.661  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:14:07.662  INFO 12256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:14:07.662  INFO 12256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:14:07.687  INFO 12256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:14:07.687  INFO 12256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 418 ms
-2020-11-11 00:14:07.706  INFO 12256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:14:07.760  INFO 12256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:14:07.760  INFO 12256 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:14:07.790  INFO 12256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:14:07.797  INFO 12256 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:14:07.802  INFO 12256 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:14:07.832  WARN 12256 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:14:07.833  WARN 12256 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:14:07.940  INFO 12256 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:14:07.941  INFO 12256 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:14:07.977  INFO 12256 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:14:08.019  WARN 12256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:14:08.196  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:14:08.197  INFO 12256 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:14:08.224  INFO 12256 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:14:08.228  INFO 12256 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.994 seconds (JVM running for 71.905)
-2020-11-11 00:14:08.230  INFO 12256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-11 00:14:14.502  INFO 12256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-11 00:14:14.503  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-11 00:14:14.504  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2020-11-11 00:14:14.542  INFO 12256 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Create Users => Begin
-2020-11-11 00:14:14.597  WARN 12256 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.example.demo.entities.UserInfoEntity.creataedDatetime; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.demo.entities.UserInfoEntity.creataedDatetime]
-2020-11-11 00:15:15.128  INFO 12256 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:15:15.128  INFO 12256 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:15:15.129  INFO 12256 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:15:15.136  INFO 12256 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:15:15.228  INFO 12256 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 12256 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:15:15.229  INFO 12256 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:15:15.461  INFO 12256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:15:15.476  INFO 12256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 JPA repository interfaces.
-2020-11-11 00:15:15.541  WARN 12256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:15:15.616  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:15:15.616  INFO 12256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:15:15.617  INFO 12256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:15:15.642  INFO 12256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:15:15.642  INFO 12256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 411 ms
-2020-11-11 00:15:15.662  INFO 12256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:15:15.711  INFO 12256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:15:15.711  INFO 12256 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:15:15.740  INFO 12256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:15:15.748  INFO 12256 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:15:15.754  INFO 12256 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:15:15.780  WARN 12256 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:15:15.780  WARN 12256 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:15:15.879  INFO 12256 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:15:15.881  INFO 12256 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:15:15.917  INFO 12256 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:15:15.940  WARN 12256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:15:16.110  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:15:16.111  INFO 12256 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:15:16.154  INFO 12256 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:15:16.158  INFO 12256 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.964 seconds (JVM running for 139.835)
-2020-11-11 00:15:16.160  INFO 12256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-11 00:15:36.076  INFO 12256 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2020-11-11 00:15:36.140  INFO 12256 --- [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:15:36.140  INFO 12256 --- [RMI TCP Connection(7)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:15:36.140  INFO 12256 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:15:36.148  INFO 12256 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:15:43.932  INFO 13748 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 13748 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:15:43.935  INFO 13748 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:15:43.985  INFO 13748 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.3.0.0\967c0b1a2d5b1435324de34a9b8018d294f8f47b\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.3.0.0/967c0b1a2d5b1435324de34a9b8018d294f8f47b/oraclepki.jar
-2020-11-11 00:15:43.985  INFO 13748 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.security\oraclepki\19.3.0.0\e52a34f271c6c62ee1a73b71cc19da5459b709f\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_cert.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_cert.jar
-2020-11-11 00:15:43.985  INFO 13748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-11 00:15:44.732  INFO 13748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:15:44.787  INFO 13748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 2 JPA repository interfaces.
-2020-11-11 00:15:44.956  WARN 13748 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:15:45.439  INFO 13748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:15:45.453  INFO 13748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:15:45.453  INFO 13748 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:15:45.568  INFO 13748 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:15:45.569  INFO 13748 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1584 ms
-2020-11-11 00:15:45.673  INFO 13748 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:15:45.975  INFO 13748 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:15:45.979  INFO 13748 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:15:46.250  INFO 13748 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:15:46.309  INFO 13748 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:15:46.372  INFO 13748 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
-2020-11-11 00:15:46.574  INFO 13748 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-11-11 00:15:46.688  INFO 13748 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:15:46.959  WARN 13748 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:15:46.961  WARN 13748 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:15:47.690  INFO 13748 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:15:47.698  INFO 13748 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:15:48.017  INFO 13748 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:15:48.133  WARN 13748 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:15:48.730  INFO 13748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:15:48.731  INFO 13748 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:15:48.809  INFO 13748 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:15:48.817  INFO 13748 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 5.235 seconds (JVM running for 6.161)
-2020-11-11 00:15:51.294  INFO 13748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-11 00:15:51.295  INFO 13748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-11 00:15:51.326  INFO 13748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
-2020-11-11 00:15:51.436  INFO 13748 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Create Users => Begin
-2020-11-11 00:15:51.514  WARN 13748 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.example.demo.entities.UserInfoEntity.createdDatetime; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.demo.entities.UserInfoEntity.createdDatetime]
-2020-11-11 00:16:14.935  INFO 13748 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2020-11-11 00:16:15.019  INFO 13748 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:16:15.021  INFO 13748 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:16:15.023  INFO 13748 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:16:15.032  INFO 13748 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:16:19.033  INFO 2924 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 2924 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:16:19.036  INFO 2924 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:16:19.081  INFO 2924 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.3.0.0\967c0b1a2d5b1435324de34a9b8018d294f8f47b\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.3.0.0/967c0b1a2d5b1435324de34a9b8018d294f8f47b/oraclepki.jar
-2020-11-11 00:16:19.081  INFO 2924 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.security\oraclepki\19.3.0.0\e52a34f271c6c62ee1a73b71cc19da5459b709f\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_cert.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_cert.jar
-2020-11-11 00:16:19.081  INFO 2924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-11 00:16:19.858  INFO 2924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:16:19.947  INFO 2924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77ms. Found 2 JPA repository interfaces.
-2020-11-11 00:16:20.130  WARN 2924 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:16:20.684  INFO 2924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:16:20.694  INFO 2924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:16:20.694  INFO 2924 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:16:20.827  INFO 2924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:16:20.828  INFO 2924 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1747 ms
-2020-11-11 00:16:20.986  INFO 2924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:16:21.285  INFO 2924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:16:21.290  INFO 2924 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:16:21.614  INFO 2924 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:16:21.668  INFO 2924 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:16:21.718  INFO 2924 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
-2020-11-11 00:16:22.024  INFO 2924 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-11-11 00:16:22.152  INFO 2924 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:16:22.445  WARN 2924 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:16:22.446  WARN 2924 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:16:23.165  INFO 2924 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:16:23.173  INFO 2924 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:16:23.550  INFO 2924 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:16:23.720  WARN 2924 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:16:24.363  INFO 2924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:16:24.365  INFO 2924 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:16:24.450  INFO 2924 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:16:24.457  INFO 2924 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 5.777 seconds (JVM running for 6.719)
-2020-11-11 00:16:41.563  INFO 10412 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 10412 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:16:41.566  INFO 10412 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:16:41.614  INFO 10412 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.3.0.0\967c0b1a2d5b1435324de34a9b8018d294f8f47b\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.3.0.0/967c0b1a2d5b1435324de34a9b8018d294f8f47b/oraclepki.jar
-2020-11-11 00:16:41.615  INFO 10412 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.security\oraclepki\19.3.0.0\e52a34f271c6c62ee1a73b71cc19da5459b709f\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_cert.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_cert.jar
-2020-11-11 00:16:41.615  INFO 10412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-11 00:16:42.331  INFO 10412 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:16:42.384  INFO 10412 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 2 JPA repository interfaces.
-2020-11-11 00:16:42.544  WARN 10412 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:16:43.030  INFO 10412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:16:43.039  INFO 10412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:16:43.039  INFO 10412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:16:43.149  INFO 10412 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:16:43.150  INFO 10412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1535 ms
-2020-11-11 00:16:43.255  INFO 10412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:16:43.535  INFO 10412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:16:43.539  INFO 10412 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:16:43.774  INFO 10412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:16:43.828  INFO 10412 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:16:43.897  INFO 10412 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
-2020-11-11 00:16:44.073  INFO 10412 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-11-11 00:16:44.182  INFO 10412 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:16:44.463  WARN 10412 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:16:44.465  WARN 10412 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:16:44.967  INFO 10412 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:16:44.975  INFO 10412 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:16:45.265  WARN 10412 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2020-11-11 00:16:45.394  WARN 10412 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:16:45.991  WARN 10412 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-2020-11-11 00:16:45.994  INFO 10412 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:16:45.995  INFO 10412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:16:45.997  INFO 10412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:16:46.006  INFO 10412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:16:46.009  INFO 10412 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-11-11 00:16:46.013  WARN 10412 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@15/java.lang.Object.wait(Native Method)
- java.base@15/java.lang.Object.wait(Object.java:321)
- java.base@15/java.util.TimerThread.mainLoop(Timer.java:527)
- java.base@15/java.util.TimerThread.run(Timer.java:506)
-2020-11-11 00:16:46.014  WARN 10412 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@15/java.lang.Object.wait(Native Method)
- app//oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:331)
-2020-11-11 00:16:46.014  WARN 10412 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@15/java.lang.Object.wait(Native Method)
- java.base@15/java.util.TimerThread.mainLoop(Timer.java:553)
- java.base@15/java.util.TimerThread.run(Timer.java:506)
-2020-11-11 00:16:46.023  INFO 10412 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-11-11 00:16:46.026 ERROR 10412 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2020-11-11 00:16:48.507  INFO 2924 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2020-11-11 00:16:48.590  INFO 2924 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:16:48.592  INFO 2924 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:16:48.594  INFO 2924 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:16:48.602  INFO 2924 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:16:54.060  INFO 13476 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 13476 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:16:54.067  INFO 13476 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:16:54.119  INFO 13476 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.3.0.0\967c0b1a2d5b1435324de34a9b8018d294f8f47b\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.3.0.0/967c0b1a2d5b1435324de34a9b8018d294f8f47b/oraclepki.jar
-2020-11-11 00:16:54.119  INFO 13476 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.security\oraclepki\19.3.0.0\e52a34f271c6c62ee1a73b71cc19da5459b709f\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_cert.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_cert.jar
-2020-11-11 00:16:54.120  INFO 13476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-11 00:16:54.846  INFO 13476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:16:54.904  INFO 13476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 2 JPA repository interfaces.
-2020-11-11 00:16:55.073  WARN 13476 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:16:55.560  INFO 13476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:16:55.576  INFO 13476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:16:55.576  INFO 13476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:16:55.716  INFO 13476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:16:55.716  INFO 13476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1596 ms
-2020-11-11 00:16:55.825  INFO 13476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:16:56.093  INFO 13476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:16:56.098  INFO 13476 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:16:56.343  INFO 13476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:16:56.400  INFO 13476 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:16:56.452  INFO 13476 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
-2020-11-11 00:16:56.616  INFO 13476 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-11-11 00:16:56.735  INFO 13476 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:16:56.993  WARN 13476 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:16:56.994  WARN 13476 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:16:57.527  INFO 13476 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:16:57.534  INFO 13476 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:16:57.817  INFO 13476 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:16:57.935  WARN 13476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:16:58.532  INFO 13476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:16:58.533  INFO 13476 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:16:58.609  INFO 13476 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:16:58.616  INFO 13476 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 4.914 seconds (JVM running for 5.83)
-2020-11-11 00:17:44.678  INFO 13476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-11 00:17:44.678  INFO 13476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-11 00:17:44.697  INFO 13476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
-2020-11-11 00:17:44.791  INFO 13476 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Create Users => Begin
-2020-11-11 00:17:44.857  WARN 13476 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.example.demo.entities.UserInfoEntity.createdDatetime; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.demo.entities.UserInfoEntity.createdDatetime]
-2020-11-11 00:21:27.902  INFO 13476 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:21:27.904  INFO 13476 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:21:27.906  INFO 13476 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:21:27.913  INFO 13476 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:21:27.997  INFO 13476 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 13476 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:21:27.997  INFO 13476 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:21:28.261  INFO 13476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:21:28.277  INFO 13476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 2 JPA repository interfaces.
-2020-11-11 00:21:28.329  WARN 13476 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:21:28.417  INFO 13476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:21:28.418  INFO 13476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:21:28.418  INFO 13476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:21:28.445  INFO 13476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:21:28.445  INFO 13476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 445 ms
-2020-11-11 00:21:28.462  INFO 13476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:21:28.537  INFO 13476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:21:28.537  INFO 13476 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:21:28.572  INFO 13476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:21:28.581  INFO 13476 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:21:28.587  INFO 13476 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:21:28.620  WARN 13476 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:21:28.620  WARN 13476 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:21:28.736  INFO 13476 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:21:28.738  INFO 13476 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:21:28.777  INFO 13476 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:21:28.809  WARN 13476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:21:28.991  INFO 13476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:21:28.993  INFO 13476 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:21:29.029  INFO 13476 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:21:29.033  INFO 13476 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.066 seconds (JVM running for 276.246)
-2020-11-11 00:21:29.034  INFO 13476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-11 00:21:32.361  INFO 13476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-11 00:21:32.361  INFO 13476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-11 00:21:32.363  INFO 13476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2020-11-11 00:21:32.366  INFO 13476 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Create Users => Begin
-2020-11-11 00:21:32.378  WARN 13476 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ClassCastException: class java.time.LocalDateTime cannot be cast to class java.util.Date (java.time.LocalDateTime and java.util.Date are in module java.base of loader 'bootstrap')]
-2020-11-11 00:25:07.015  INFO 13476 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:25:07.016  INFO 13476 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:25:07.016  INFO 13476 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:25:07.024  INFO 13476 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:25:07.149  INFO 13476 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 13476 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:25:07.150  INFO 13476 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:25:07.400  INFO 13476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:25:07.417  INFO 13476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 2 JPA repository interfaces.
-2020-11-11 00:25:07.461  WARN 13476 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:25:07.531  INFO 13476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:25:07.532  INFO 13476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:25:07.532  INFO 13476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:25:07.558  INFO 13476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:25:07.558  INFO 13476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 405 ms
-2020-11-11 00:25:07.576  INFO 13476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:25:07.627  INFO 13476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:25:07.628  INFO 13476 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:25:07.656  INFO 13476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:25:07.664  INFO 13476 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:25:07.671  INFO 13476 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:25:07.699  WARN 13476 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:25:07.699  WARN 13476 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:25:07.802  INFO 13476 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:25:07.804  INFO 13476 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:25:07.843  INFO 13476 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:25:07.880  WARN 13476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:25:08.026  INFO 13476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:25:08.027  INFO 13476 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:25:08.054  INFO 13476 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:25:08.058  INFO 13476 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.962 seconds (JVM running for 495.271)
-2020-11-11 00:25:08.059  INFO 13476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-11 00:25:09.786  INFO 13476 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2020-11-11 00:25:09.847  INFO 13476 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:25:09.847  INFO 13476 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:25:09.848  INFO 13476 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:25:09.857  INFO 13476 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:28:01.518  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 3428 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:28:01.522  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:28:01.571  INFO 3428 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.3.0.0\967c0b1a2d5b1435324de34a9b8018d294f8f47b\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.3.0.0/967c0b1a2d5b1435324de34a9b8018d294f8f47b/oraclepki.jar
-2020-11-11 00:28:01.572  INFO 3428 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.security\oraclepki\19.3.0.0\e52a34f271c6c62ee1a73b71cc19da5459b709f\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/e52a34f271c6c62ee1a73b71cc19da5459b709f/osdt_cert.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_core.jar,file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.3.0.0/oracle.osdt/osdt_cert.jar
-2020-11-11 00:28:01.572  INFO 3428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-11 00:28:02.364  INFO 3428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:28:02.423  INFO 3428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 2 JPA repository interfaces.
-2020-11-11 00:28:02.593  WARN 3428 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:28:03.094  INFO 3428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:28:03.104  INFO 3428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:28:03.105  INFO 3428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:28:03.270  INFO 3428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:28:03.270  INFO 3428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1698 ms
-2020-11-11 00:28:03.379  INFO 3428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:28:03.678  INFO 3428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:28:03.683  INFO 3428 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:28:03.923  INFO 3428 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:28:03.979  INFO 3428 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:28:04.039  INFO 3428 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
-2020-11-11 00:28:04.198  INFO 3428 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-11-11 00:28:04.315  INFO 3428 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:28:04.590  WARN 3428 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:28:04.591  WARN 3428 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:28:05.120  INFO 3428 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:28:05.128  INFO 3428 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:28:05.410  INFO 3428 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:28:05.525  WARN 3428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:28:06.117  INFO 3428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:28:06.118  INFO 3428 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:28:06.211  INFO 3428 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:28:06.218  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 5.05 seconds (JVM running for 5.998)
-2020-11-11 00:28:09.593  INFO 3428 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:28:09.595  INFO 3428 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:28:09.597  INFO 3428 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:28:09.605  INFO 3428 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:28:09.704  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 3428 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:28:09.704  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:28:09.965  INFO 3428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:28:09.981  INFO 3428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 2 JPA repository interfaces.
-2020-11-11 00:28:10.022  WARN 3428 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:28:10.098  INFO 3428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:28:10.098  INFO 3428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:28:10.098  INFO 3428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:28:10.123  INFO 3428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:28:10.123  INFO 3428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 417 ms
-2020-11-11 00:28:10.141  INFO 3428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:28:10.191  INFO 3428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:28:10.191  INFO 3428 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:28:10.224  INFO 3428 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:28:10.233  INFO 3428 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:28:10.239  INFO 3428 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:28:10.269  WARN 3428 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:28:10.270  WARN 3428 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:28:10.375  INFO 3428 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:28:10.377  INFO 3428 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:28:10.418  INFO 3428 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:28:10.456  WARN 3428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:28:10.629  INFO 3428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:28:10.630  INFO 3428 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:28:10.658  INFO 3428 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:28:10.662  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.003 seconds (JVM running for 10.442)
-2020-11-11 00:28:10.664  INFO 3428 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-11 00:28:21.769  INFO 3428 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-11 00:28:21.769  INFO 3428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-11 00:28:21.788  INFO 3428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
-2020-11-11 00:28:21.872  INFO 3428 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Create Users => Begin
-2020-11-11 00:28:21.952  INFO 3428 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Create Users => End
-2020-11-11 00:28:59.627  WARN 3428 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'pageNumber' is not present]
-2020-11-11 00:29:07.481  INFO 3428 --- [http-nio-8080-exec-3] com.example.demo.api.UserInfoController  : List Users => Begin
-2020-11-11 00:29:07.686  INFO 3428 --- [http-nio-8080-exec-3] com.example.demo.api.UserInfoController  : List Users => End
-2020-11-11 00:29:10.842  INFO 3428 --- [http-nio-8080-exec-4] com.example.demo.api.UserInfoController  : List Users => Begin
-2020-11-11 00:29:10.858  WARN 3428 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: Could not set field value [2020-11-11] value by reflection : [class com.example.demo.entities.UserInfoEntity.createdDatetime] setter of com.example.demo.entities.UserInfoEntity.createdDatetime; nested exception is org.hibernate.PropertyAccessException: Could not set field value [2020-11-11] value by reflection : [class com.example.demo.entities.UserInfoEntity.createdDatetime] setter of com.example.demo.entities.UserInfoEntity.createdDatetime]
-2020-11-11 00:29:55.918  INFO 3428 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:29:55.919  INFO 3428 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:29:55.919  INFO 3428 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:29:55.927  INFO 3428 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:29:56.011  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 3428 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:29:56.011  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:29:56.245  INFO 3428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:29:56.261  INFO 3428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 2 JPA repository interfaces.
-2020-11-11 00:29:56.306  WARN 3428 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:29:56.382  INFO 3428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:29:56.383  INFO 3428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:29:56.383  INFO 3428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:29:56.409  INFO 3428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:29:56.409  INFO 3428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 394 ms
-2020-11-11 00:29:56.427  INFO 3428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:29:56.477  INFO 3428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:29:56.477  INFO 3428 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:29:56.504  INFO 3428 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:29:56.512  INFO 3428 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:29:56.517  INFO 3428 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:29:56.543  WARN 3428 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:29:56.544  WARN 3428 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:29:56.645  INFO 3428 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:29:56.646  INFO 3428 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:29:56.694  INFO 3428 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:29:56.705  WARN 3428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:29:56.897  INFO 3428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:29:56.898  INFO 3428 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:29:56.923  INFO 3428 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:29:56.926  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.949 seconds (JVM running for 116.707)
-2020-11-11 00:29:56.928  INFO 3428 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-11 00:30:06.437  INFO 3428 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:30:06.437  INFO 3428 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:30:06.437  INFO 3428 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
-2020-11-11 00:30:06.444  INFO 3428 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
-2020-11-11 00:30:06.521  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 3428 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
-2020-11-11 00:30:06.522  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-11-11 00:30:06.758  INFO 3428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-11 00:30:06.775  INFO 3428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 2 JPA repository interfaces.
-2020-11-11 00:30:06.810  WARN 3428 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2020-11-11 00:30:06.874  INFO 3428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 00:30:06.875  INFO 3428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 00:30:06.875  INFO 3428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-11 00:30:06.901  INFO 3428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 00:30:06.901  INFO 3428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 377 ms
-2020-11-11 00:30:06.922  INFO 3428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
-2020-11-11 00:30:06.973  INFO 3428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
-2020-11-11 00:30:06.973  INFO 3428 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
-2020-11-11 00:30:07.002  INFO 3428 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 00:30:07.010  INFO 3428 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-11 00:30:07.016  INFO 3428 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-11-11 00:30:07.041  WARN 3428 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:30:07.041  WARN 3428 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2020-11-11 00:30:07.143  INFO 3428 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-11 00:30:07.144  INFO 3428 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-11 00:30:07.174  INFO 3428 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 00:30:07.209  WARN 3428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-11 00:30:07.378  INFO 3428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 00:30:07.379  INFO 3428 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-11 00:30:07.407  INFO 3428 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-11 00:30:07.411  INFO 3428 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.918 seconds (JVM running for 127.191)
-2020-11-11 00:30:07.412  INFO 3428 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-12 00:00:15.643  INFO 7432 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:00:15.648  INFO 7432 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:00:15.648  INFO 7432 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-12 00:00:15.655  INFO 7432 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-12 00:00:15.738  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 7432 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-12 00:00:15.739  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-12 00:00:15.999  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-12 00:00:16.014  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 JPA repository interfaces.
+2020-11-12 00:00:16.049  WARN 7432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-12 00:00:16.124  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 00:00:16.125  INFO 7432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 00:00:16.125  INFO 7432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-12 00:00:16.154  INFO 7432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 00:00:16.154  INFO 7432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 413 ms
+2020-11-12 00:00:16.181  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-12 00:00:16.233  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-12 00:00:16.233  INFO 7432 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-12 00:00:16.264  INFO 7432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:00:16.274  INFO 7432 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-12 00:00:16.290  INFO 7432 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-12 00:00:16.317  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:00:16.317  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:00:16.421  INFO 7432 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-12 00:00:16.422  INFO 7432 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:00:16.473  INFO 7432 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-12 00:00:16.484  WARN 7432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-12 00:00:16.640  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 00:00:16.641  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-12 00:00:16.668  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-12 00:00:16.671  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.962 seconds (JVM running for 468.378)
+2020-11-12 00:00:16.672  INFO 7432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-12 00:00:28.231  INFO 7432 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:00:28.232  INFO 7432 --- [Thread-32] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:00:28.232  INFO 7432 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-12 00:00:28.238  INFO 7432 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-12 00:00:28.322  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 7432 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-12 00:00:28.322  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-12 00:00:28.565  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-12 00:00:28.580  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 JPA repository interfaces.
+2020-11-12 00:00:28.617  WARN 7432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-12 00:00:28.686  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 00:00:28.687  INFO 7432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 00:00:28.687  INFO 7432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-12 00:00:28.711  INFO 7432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 00:00:28.711  INFO 7432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 385 ms
+2020-11-12 00:00:28.727  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-12 00:00:28.777  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-12 00:00:28.777  INFO 7432 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-12 00:00:28.805  INFO 7432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:00:28.812  INFO 7432 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-12 00:00:28.818  INFO 7432 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-12 00:00:28.841  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:00:28.841  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:00:28.939  INFO 7432 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-12 00:00:28.940  INFO 7432 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:00:28.988  INFO 7432 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-12 00:00:28.997  WARN 7432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-12 00:00:29.173  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 00:00:29.173  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-12 00:00:29.213  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-12 00:00:29.217  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.928 seconds (JVM running for 480.924)
+2020-11-12 00:00:29.218  INFO 7432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-12 00:00:35.539  INFO 7432 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 00:00:35.539  INFO 7432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 00:00:35.541  INFO 7432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-11-12 00:00:35.544  INFO 7432 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Create Users => Begin
+2020-11-12 00:00:35.554  INFO 7432 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Create Users => End
+2020-11-12 00:01:31.110  INFO 7432 --- [Thread-38] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:01:31.110  INFO 7432 --- [Thread-38] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:01:31.111  INFO 7432 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-12 00:01:31.123  INFO 7432 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-12 00:01:31.208  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 7432 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-12 00:01:31.209  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-12 00:01:31.450  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-12 00:01:31.467  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 2 JPA repository interfaces.
+2020-11-12 00:01:31.500  WARN 7432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-12 00:01:31.569  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 00:01:31.570  INFO 7432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 00:01:31.570  INFO 7432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-12 00:01:31.595  INFO 7432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 00:01:31.596  INFO 7432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 385 ms
+2020-11-12 00:01:31.613  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-12 00:01:31.666  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-12 00:01:31.666  INFO 7432 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-12 00:01:31.694  INFO 7432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:01:31.702  INFO 7432 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-12 00:01:31.707  INFO 7432 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-12 00:01:31.733  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:01:31.733  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:01:31.827  INFO 7432 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-12 00:01:31.829  INFO 7432 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:01:31.857  INFO 7432 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-12 00:01:31.895  WARN 7432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-12 00:01:32.102  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 00:01:32.103  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-12 00:01:32.129  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-12 00:01:32.133  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.955 seconds (JVM running for 543.84)
+2020-11-12 00:01:32.135  INFO 7432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-12 00:01:41.629  INFO 7432 --- [Thread-45] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:01:41.630  INFO 7432 --- [Thread-45] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:01:41.630  INFO 7432 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-12 00:01:41.638  INFO 7432 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-12 00:01:41.733  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 7432 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-12 00:01:41.733  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-12 00:01:42.006  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-12 00:01:42.023  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 2 JPA repository interfaces.
+2020-11-12 00:01:42.071  WARN 7432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-12 00:01:42.166  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 00:01:42.166  INFO 7432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 00:01:42.167  INFO 7432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-12 00:01:42.190  INFO 7432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 00:01:42.191  INFO 7432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 455 ms
+2020-11-12 00:01:42.208  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-12 00:01:42.257  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-12 00:01:42.258  INFO 7432 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-12 00:01:42.287  INFO 7432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:01:42.295  INFO 7432 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-12 00:01:42.303  INFO 7432 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-12 00:01:42.328  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:01:42.328  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:01:42.429  INFO 7432 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-12 00:01:42.430  INFO 7432 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:01:42.469  INFO 7432 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-12 00:01:42.498  WARN 7432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-12 00:01:42.682  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 00:01:42.683  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-12 00:01:42.711  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-12 00:01:42.715  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.019 seconds (JVM running for 554.422)
+2020-11-12 00:01:42.716  INFO 7432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-12 00:01:45.143  INFO 7432 --- [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:01:45.143  INFO 7432 --- [Thread-51] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:01:45.144  INFO 7432 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-12 00:01:45.150  INFO 7432 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-12 00:01:45.230  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 7432 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-12 00:01:45.230  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-12 00:01:45.485  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-12 00:01:45.500  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 JPA repository interfaces.
+2020-11-12 00:01:45.535  WARN 7432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-12 00:01:45.604  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 00:01:45.605  INFO 7432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 00:01:45.605  INFO 7432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-12 00:01:45.635  INFO 7432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 00:01:45.635  INFO 7432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 403 ms
+2020-11-12 00:01:45.652  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-12 00:01:45.702  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-12 00:01:45.702  INFO 7432 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-12 00:01:45.732  INFO 7432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:01:45.741  INFO 7432 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-12 00:01:45.747  INFO 7432 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-12 00:01:45.771  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:01:45.771  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:01:45.871  INFO 7432 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-12 00:01:45.873  INFO 7432 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:01:45.926  INFO 7432 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-12 00:01:45.946  WARN 7432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-12 00:01:46.096  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 00:01:46.097  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-12 00:01:46.124  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-12 00:01:46.128  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.923 seconds (JVM running for 557.835)
+2020-11-12 00:01:46.129  INFO 7432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-12 00:01:59.640  INFO 7432 --- [Thread-57] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:01:59.640  INFO 7432 --- [Thread-57] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:01:59.641  INFO 7432 --- [Thread-57] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-12 00:01:59.648  INFO 7432 --- [Thread-57] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-12 00:01:59.739  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 7432 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-12 00:01:59.740  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-12 00:02:00.033  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-12 00:02:00.062  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 2 JPA repository interfaces.
+2020-11-12 00:02:00.138  WARN 7432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-12 00:02:00.220  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 00:02:00.220  INFO 7432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 00:02:00.221  INFO 7432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-12 00:02:00.250  INFO 7432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 00:02:00.250  INFO 7432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 508 ms
+2020-11-12 00:02:00.278  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-12 00:02:00.336  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-12 00:02:00.337  INFO 7432 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-12 00:02:00.366  INFO 7432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:02:00.373  INFO 7432 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-12 00:02:00.379  INFO 7432 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-12 00:02:00.406  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:02:00.406  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:02:00.515  INFO 7432 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-12 00:02:00.516  INFO 7432 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:02:00.564  INFO 7432 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-12 00:02:00.601  WARN 7432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-12 00:02:00.772  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 00:02:00.772  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-12 00:02:00.799  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-12 00:02:00.802  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.097 seconds (JVM running for 572.509)
+2020-11-12 00:02:00.804  INFO 7432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-12 00:02:08.285  INFO 7432 --- [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:02:08.286  INFO 7432 --- [Thread-63] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:02:08.286  INFO 7432 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-12 00:02:08.292  INFO 7432 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-12 00:02:08.377  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 7432 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-12 00:02:08.377  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-12 00:02:08.638  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-12 00:02:08.653  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 JPA repository interfaces.
+2020-11-12 00:02:08.686  WARN 7432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-12 00:02:08.756  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 00:02:08.756  INFO 7432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 00:02:08.756  INFO 7432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-12 00:02:08.782  INFO 7432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 00:02:08.782  INFO 7432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 403 ms
+2020-11-12 00:02:08.797  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-12 00:02:08.847  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-12 00:02:08.847  INFO 7432 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-12 00:02:08.875  INFO 7432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:02:08.883  INFO 7432 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-12 00:02:08.888  INFO 7432 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-12 00:02:08.911  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:02:08.911  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:02:09.015  INFO 7432 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-12 00:02:09.016  INFO 7432 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:02:09.046  INFO 7432 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-12 00:02:09.075  WARN 7432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-12 00:02:09.236  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 00:02:09.237  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-12 00:02:09.263  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-12 00:02:09.266  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.916 seconds (JVM running for 580.973)
+2020-11-12 00:02:09.268  INFO 7432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-12 00:02:14.784  INFO 7432 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 00:02:14.785  INFO 7432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 00:02:14.786  INFO 7432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-11-12 00:02:14.789  INFO 7432 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Create Users => Begin
+2020-11-12 00:02:14.799  INFO 7432 --- [http-nio-8080-exec-1] com.example.demo.api.UserInfoController  : Create Users => End
+2020-11-12 00:02:29.230  INFO 7432 --- [http-nio-8080-exec-2] com.example.demo.api.UserInfoController  : List Users => Begin
+2020-11-12 00:02:29.428  INFO 7432 --- [http-nio-8080-exec-2] com.example.demo.api.UserInfoController  : List Users => End
+2020-11-12 00:02:34.569  INFO 7432 --- [http-nio-8080-exec-3] com.example.demo.api.UserInfoController  : List Users => Begin
+2020-11-12 00:02:34.582  INFO 7432 --- [http-nio-8080-exec-3] com.example.demo.api.UserInfoController  : List Users => End
+2020-11-12 00:04:25.804  INFO 7432 --- [Thread-69] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:04:25.805  INFO 7432 --- [Thread-69] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:04:25.805  INFO 7432 --- [Thread-69] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-12 00:04:25.817  INFO 7432 --- [Thread-69] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-12 00:04:25.910  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 7432 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-12 00:04:25.911  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-12 00:04:26.212  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-12 00:04:26.233  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 2 JPA repository interfaces.
+2020-11-12 00:04:26.271  WARN 7432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-12 00:04:26.405  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 00:04:26.405  INFO 7432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 00:04:26.406  INFO 7432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-12 00:04:26.467  INFO 7432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 00:04:26.467  INFO 7432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 554 ms
+2020-11-12 00:04:26.507  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-12 00:04:26.588  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-12 00:04:26.589  INFO 7432 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-12 00:04:26.617  INFO 7432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:04:26.668  INFO 7432 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-12 00:04:26.673  INFO 7432 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-12 00:04:26.703  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:04:26.703  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:04:26.802  INFO 7432 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-12 00:04:26.803  INFO 7432 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:04:26.826  INFO 7432 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-12 00:04:26.861  WARN 7432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-12 00:04:27.017  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 00:04:27.018  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-12 00:04:27.047  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-12 00:04:27.050  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.17 seconds (JVM running for 718.757)
+2020-11-12 00:04:27.051  INFO 7432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-12 00:04:28.478  INFO 7432 --- [Thread-78] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:04:28.478  INFO 7432 --- [Thread-78] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:04:28.478  INFO 7432 --- [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
+2020-11-12 00:04:28.486  INFO 7432 --- [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+2020-11-12 00:04:28.567  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 7432 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
+2020-11-12 00:04:28.567  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-12 00:04:28.800  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-12 00:04:28.816  INFO 7432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 2 JPA repository interfaces.
+2020-11-12 00:04:28.849  WARN 7432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-12 00:04:28.915  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 00:04:28.916  INFO 7432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 00:04:28.916  INFO 7432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-12 00:04:28.942  INFO 7432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 00:04:28.942  INFO 7432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 373 ms
+2020-11-12 00:04:28.959  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Starting...
+2020-11-12 00:04:29.008  INFO 7432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Start completed.
+2020-11-12 00:04:29.009  INFO 7432 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//localhost:1521/orclpdb'
+2020-11-12 00:04:29.036  INFO 7432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 00:04:29.044  INFO 7432 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-12 00:04:29.052  INFO 7432 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-11-12 00:04:29.077  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:04:29.077  WARN 7432 --- [task-1] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-11-12 00:04:29.172  INFO 7432 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-12 00:04:29.173  INFO 7432 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 00:04:29.201  INFO 7432 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-12 00:04:29.229  WARN 7432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-12 00:04:29.381  INFO 7432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 00:04:29.382  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-12 00:04:29.418  INFO 7432 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-12 00:04:29.421  INFO 7432 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.88 seconds (JVM running for 721.128)
+2020-11-12 00:04:29.422  INFO 7432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

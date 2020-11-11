@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class UserInfoCreateResponseDto {
 
-	@JsonProperty("createdUser")
+	@JsonProperty("user")
 	UserInfoEntity createdUser;
 
 	public UserInfoCreateResponseDto(UserInfoEntity createdUser) {

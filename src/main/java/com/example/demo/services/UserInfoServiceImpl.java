@@ -25,6 +25,7 @@ public class UserInfoServiceImpl implements UserInfoService {
 	public UserInfoCreateResponseDto createUser(UserInfoCreateRequestDto request) {
 		LocalDateTimeAttributeConverter localDateTimeConverter = new LocalDateTimeAttributeConverter();
 		
+		// Create user entity
 		UserInfoEntity user = new UserInfoEntity();
 		user.setGivenName(request.getGivenName());
 		user.setFamilyName(request.getFamilyName());
@@ -34,11 +35,13 @@ public class UserInfoServiceImpl implements UserInfoService {
 		user.setCreatedDatetime(localDateTimeConverter.convertToDatabaseColumn(request.getCreatedDatetime()));
 		user.setModifiedDatetime(localDateTimeConverter.convertToDatabaseColumn(request.getModifiedDatetime()));
 		
+		// Insert data and create instance for the response
 		UserInfoCreateResponseDto createdUser = new UserInfoCreateResponseDto(repository.save(user));
+		
 		return createdUser;
 	}
 
-	@Override
+	@Override	
 	public UserInfoEntity updateUser(UserInfoEntity user) {
 		// TODO Auto-generated method stub
 		return null;
