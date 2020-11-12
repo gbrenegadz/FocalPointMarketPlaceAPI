@@ -8,6 +8,11 @@ import org.springframework.data.repository.query.Param;
 
 import com.example.demo.entities.DemoApplicationEntity;
 
+/**
+ * 
+ * @author Gilbert Renegado
+ *
+ */
 public interface DemoApplicationRepository extends JpaRepository<DemoApplicationEntity, Long> {
 
 	@Transactional

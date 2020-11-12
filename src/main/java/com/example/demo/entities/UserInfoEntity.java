@@ -11,6 +11,11 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
+/**
+ * 
+ * @author Gilbert Renegado
+ *
+ */
 @Entity
 @Data
 @Table(name = "user_info", schema = "gilbert_p_renegado")

@@ -19,6 +19,11 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+/**
+ * 
+ * @author Gilbert Renegado
+ *
+ */
 @ControllerAdvice
 public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 	

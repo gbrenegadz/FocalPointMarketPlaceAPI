@@ -9,7 +9,11 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.example.demo.entities.UserInfoEntity;
 
-
+/**
+ * 
+ * @author Gilbert Renegado
+ *
+ */
 public interface UserInfoRepository extends JpaRepository<UserInfoEntity, Long> {
 
 	@Transactional

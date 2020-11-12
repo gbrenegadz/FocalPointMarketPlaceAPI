@@ -15,6 +15,11 @@ import com.example.demo.entities.UserInfoEntity;
 import com.example.demo.repositories.UserInfoRepository;
 import com.example.demo.utils.LocalDateTimeAttributeConverter;
 
+/**
+ * 
+ * @author Gilbert Renegado
+ *
+ */
 @Service
 public class UserInfoServiceImpl implements UserInfoService {
 

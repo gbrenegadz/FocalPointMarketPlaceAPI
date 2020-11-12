@@ -9,6 +9,11 @@ import com.example.demo.dto.UserInfoCreateRequestDto;
 import com.example.demo.dto.UserInfoCreateResponseDto;
 import com.example.demo.entities.UserInfoEntity;
 
+/**
+ * 
+ * @author Gilbert Renegado
+ *
+ */
 public interface UserInfoService {
 
 	public abstract UserInfoCreateResponseDto createUser(UserInfoCreateRequestDto request);

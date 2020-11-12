@@ -18,6 +18,11 @@ import com.example.demo.services.UserInfoService;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * 
+ * @author Gilbert Renegado
+ *
+ */
 @Slf4j
 @RestController
 @RequestMapping(value = "/user")
@@ -25,6 +30,15 @@ public class UserInfoController {
 
 	@Autowired
 	UserInfoService service;
+	
+	@RequestMapping(method = RequestMethod.POST, 
+			produces = "application/json")
+	public ResponseEntity<UserInfoCreateResponseDto> createUser(@Validated @RequestBody UserInfoCreateRequestDto request) {
+		log.info("Create Users => Begin");
+		UserInfoCreateResponseDto response = service.createUser(request);
+		log.info("Create Users => End");
+		return new ResponseEntity<UserInfoCreateResponseDto>(response, HttpStatus.OK);
+	}
 
 	@RequestMapping(method = RequestMethod.GET,
 			produces = "application/json")
@@ -33,14 +47,5 @@ public class UserInfoController {
 		Page<UserInfoEntity> response = service.listAllUsers(pageNumber);
 		log.info("List Users => End");
 		return new ResponseEntity<Page<UserInfoEntity>>(response, HttpStatus.OK);
-	}
-
-	@RequestMapping(method = RequestMethod.POST, 
-			produces = "application/json")
-	public ResponseEntity<UserInfoCreateResponseDto> createUser(@Validated @RequestBody UserInfoCreateRequestDto request) {
-		log.info("Create Users => Begin");
-		UserInfoCreateResponseDto response = service.createUser(request);
-		log.info("Create Users => End");
-		return new ResponseEntity<UserInfoCreateResponseDto>(response, HttpStatus.OK);
 	}
 }

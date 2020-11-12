@@ -7,6 +7,11 @@ import org.springframework.http.HttpStatus;
 
 import lombok.Data;
 
+/**
+ * 
+ * @author Gilbert Renegado
+ *
+ */
 @Data
 public class ApiError {
 

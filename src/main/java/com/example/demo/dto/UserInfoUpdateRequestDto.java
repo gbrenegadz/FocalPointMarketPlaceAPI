@@ -16,8 +16,8 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class UserInfoCreateRequestDto {
-	
+public class UserInfoUpdateRequestDto {
+
 	@NotNull
 	@JsonProperty("fullName")
     private String fullName;

@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.services.DemoApplicationService;
 
+/**
+ * 
+ * @author Gilbert Renegado
+ *
+ */
 @RestController
 public class DemoApplicationController {
 	

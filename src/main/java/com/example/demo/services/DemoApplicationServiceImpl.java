@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entities.DemoApplicationEntity;
 import com.example.demo.repositories.DemoApplicationRepository;
 
+/**
+ * 
+ * @author Gilbert Renegado
+ *
+ */
 @Service
 public class DemoApplicationServiceImpl implements DemoApplicationService {
 
