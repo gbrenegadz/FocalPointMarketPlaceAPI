@@ -19,6 +19,10 @@ import lombok.Setter;
 public class UserInfoUpdateRequestDto {
 
 	@NotNull
+	@JsonProperty("id")
+    private Long id;
+	
+	@NotNull
 	@JsonProperty("fullName")
     private String fullName;
 	
@@ -37,9 +41,6 @@ public class UserInfoUpdateRequestDto {
 	@NotNull
 	@JsonProperty("imageUrl")
     private String imageUrl;
-	
-	@JsonIgnore
-    private final LocalDateTime createdDatetime = LocalDateTime.now();
 
     @JsonIgnore
     private final LocalDateTime modifiedDatetime = LocalDateTime.now();

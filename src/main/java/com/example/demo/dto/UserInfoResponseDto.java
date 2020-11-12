@@ -8,12 +8,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * @author Gilbert Renegado
  *
  */
-public class UserInfoCreateResponseDto {
+public class UserInfoResponseDto {
 
 	@JsonProperty("user")
 	UserInfoEntity createdUser;
 
-	public UserInfoCreateResponseDto(UserInfoEntity createdUser) {
+	public UserInfoResponseDto(UserInfoEntity createdUser) {
 		this.createdUser = createdUser;
 	}
 }

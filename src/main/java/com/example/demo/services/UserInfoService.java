@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.P
 import org.springframework.data.domain.Page;
 
 import com.example.demo.dto.UserInfoCreateRequestDto;
-import com.example.demo.dto.UserInfoCreateResponseDto;
+import com.example.demo.dto.UserInfoResponseDto;
+import com.example.demo.dto.UserInfoUpdateRequestDto;
 import com.example.demo.entities.UserInfoEntity;
 
 /**
@@ -16,9 +17,9 @@ import com.example.demo.entities.UserInfoEntity;
  */
 public interface UserInfoService {
 
-	public abstract UserInfoCreateResponseDto createUser(UserInfoCreateRequestDto request);
+	public abstract UserInfoResponseDto createUser(UserInfoCreateRequestDto request);
 	
-	public abstract UserInfoEntity updateUser(UserInfoEntity user);
+	public abstract UserInfoResponseDto updateUser(UserInfoUpdateRequestDto user);
 	
 	public abstract UserInfoEntity removeUser(UserInfoEntity user);
 	

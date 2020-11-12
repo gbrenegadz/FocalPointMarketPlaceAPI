@@ -3,6 +3,7 @@ package com.example.demo.handlers;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -133,10 +134,21 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 	/**
 	 * Default Handler
 	 */
+	@ExceptionHandler({ ResourceNotFoundException.class })
+	public ResponseEntity<Object> handleResourceNotFound(ResourceNotFoundException ex, WebRequest request) {
+	    ApiError apiError = new ApiError(
+	      HttpStatus.INTERNAL_SERVER_ERROR, ex.getLocalizedMessage(), ex.getClass().getCanonicalName());
+	    return new ResponseEntity<Object>(
+	      apiError, new HttpHeaders(), apiError.getStatus());
+	}
+	
+	/**
+	 * Default Handler
+	 */
 	@ExceptionHandler({ Exception.class })
 	public ResponseEntity<Object> handleAll(Exception ex, WebRequest request) {
 	    ApiError apiError = new ApiError(
-	      HttpStatus.INTERNAL_SERVER_ERROR, ex.getLocalizedMessage(), "error occurred");
+	      HttpStatus.INTERNAL_SERVER_ERROR, ex.getLocalizedMessage(), ex.getClass().getCanonicalName());
 	    return new ResponseEntity<Object>(
 	      apiError, new HttpHeaders(), apiError.getStatus());
 	}

@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.UserInfoCreateRequestDto;
-import com.example.demo.dto.UserInfoCreateResponseDto;
+import com.example.demo.dto.UserInfoResponseDto;
+import com.example.demo.dto.UserInfoUpdateRequestDto;
 import com.example.demo.entities.UserInfoEntity;
 import com.example.demo.services.UserInfoService;
 
@@ -33,11 +34,20 @@ public class UserInfoController {
 	
 	@RequestMapping(method = RequestMethod.POST, 
 			produces = "application/json")
-	public ResponseEntity<UserInfoCreateResponseDto> createUser(@Validated @RequestBody UserInfoCreateRequestDto request) {
+	public ResponseEntity<UserInfoResponseDto> createUser(@Validated @RequestBody UserInfoCreateRequestDto request) {
 		log.info("Create Users => Begin");
-		UserInfoCreateResponseDto response = service.createUser(request);
+		UserInfoResponseDto response = service.createUser(request);
 		log.info("Create Users => End");
-		return new ResponseEntity<UserInfoCreateResponseDto>(response, HttpStatus.OK);
+		return new ResponseEntity<UserInfoResponseDto>(response, HttpStatus.OK);
+	}
+	
+	@RequestMapping(method = RequestMethod.PUT, 
+			produces = "application/json")
+	public ResponseEntity<UserInfoResponseDto> updateUser(@Validated @RequestBody UserInfoUpdateRequestDto request) {
+		log.info("Update Users => Begin");
+		UserInfoResponseDto response = service.updateUser(request);
+		log.info("Update Users => End");
+		return new ResponseEntity<UserInfoResponseDto>(response, HttpStatus.OK);
 	}
 
 	@RequestMapping(method = RequestMethod.GET,
