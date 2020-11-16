@@ -5,10 +5,12 @@ import java.util.List;
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
 import org.springframework.data.domain.Page;
 
+import com.example.demo.dto.StatusResponseDto;
 import com.example.demo.dto.UserInfoCreateRequestDto;
 import com.example.demo.dto.UserInfoResponseDto;
 import com.example.demo.dto.UserInfoUpdateRequestDto;
 import com.example.demo.entities.UserInfoEntity;
+import com.example.demo.exceptions.CustomResourceException;
 
 /**
  * 
@@ -21,7 +23,7 @@ public interface UserInfoService {
 	
 	public abstract UserInfoResponseDto updateUser(UserInfoUpdateRequestDto user);
 	
-	public abstract UserInfoEntity removeUser(UserInfoEntity user);
+	public abstract StatusResponseDto deactivateUser(Long user) throws CustomResourceException;
 	
 	public abstract UserInfoEntity findUserById(long id);
 	

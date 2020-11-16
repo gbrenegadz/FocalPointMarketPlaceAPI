@@ -11,10 +11,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.dto.StatusResponseDto;
 import com.example.demo.dto.UserInfoCreateRequestDto;
 import com.example.demo.dto.UserInfoResponseDto;
 import com.example.demo.dto.UserInfoUpdateRequestDto;
 import com.example.demo.entities.UserInfoEntity;
+import com.example.demo.exceptions.CustomResourceException;
 import com.example.demo.services.UserInfoService;
 
 import lombok.extern.slf4j.Slf4j;
@@ -48,6 +50,16 @@ public class UserInfoController {
 		UserInfoResponseDto response = service.updateUser(request);
 		log.info("Update Users => End");
 		return new ResponseEntity<UserInfoResponseDto>(response, HttpStatus.OK);
+	}
+	
+	@RequestMapping(path = "/deactivate",
+			method = RequestMethod.PUT, 
+			produces = "application/json")
+	public ResponseEntity<StatusResponseDto> deactivateUser(@Validated @RequestParam("userId") Long userId) throws CustomResourceException {
+		log.info("Deactivate Users => Begin");
+		StatusResponseDto response = service.deactivateUser(userId);
+		log.info("Deactivate Users => End");
+		return new ResponseEntity<StatusResponseDto>(response, HttpStatus.OK);
 	}
 
 	@RequestMapping(method = RequestMethod.GET,

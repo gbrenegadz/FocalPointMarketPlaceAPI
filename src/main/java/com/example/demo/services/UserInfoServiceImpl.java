@@ -1,5 +1,6 @@
 package com.example.demo.services;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +12,13 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
+import com.example.demo.dto.StatusResponseDto;
 import com.example.demo.dto.UserInfoCreateRequestDto;
 import com.example.demo.dto.UserInfoResponseDto;
 import com.example.demo.dto.UserInfoUpdateRequestDto;
 import com.example.demo.entities.UserInfoEntity;
+import com.example.demo.enums.Status;
+import com.example.demo.exceptions.CustomResourceException;
 import com.example.demo.repositories.UserInfoRepository;
 import com.example.demo.utils.LocalDateTimeAttributeConverter;
 
@@ -29,7 +33,7 @@ public class UserInfoServiceImpl implements UserInfoService {
 
 	@Autowired
 	UserInfoRepository repository;
-	
+
 	@Autowired
 	private Environment env;
 
@@ -43,6 +47,7 @@ public class UserInfoServiceImpl implements UserInfoService {
 		user.setFullName(request.getFullName());
 		user.setEmail(request.getEmail());
 		user.setImageUrl(request.getImageUrl());
+		user.setIsActive(request.getIsActive());
 		user.setCreatedDatetime(localDateTimeConverter.convertToDatabaseColumn(request.getCreatedDatetime()));
 		user.setModifiedDatetime(localDateTimeConverter.convertToDatabaseColumn(request.getModifiedDatetime()));
 
@@ -54,10 +59,8 @@ public class UserInfoServiceImpl implements UserInfoService {
 
 	@Override
 	public UserInfoResponseDto updateUser(UserInfoUpdateRequestDto request) {
-		
-		
-		
-		// Create user entity for update
+
+		// Query user
 		UserInfoEntity user = repository.findByUserId(request.getId());
 		if (user != null) {
 			user.setGivenName(request.getGivenName());
@@ -70,15 +73,38 @@ public class UserInfoServiceImpl implements UserInfoService {
 			String error = env.getProperty("error.resource.not_found.user");
 			throw new ResourceNotFoundException(error);
 		}
-		
+
 		UserInfoResponseDto updatedUser = new UserInfoResponseDto(repository.save(user));
 		return updatedUser;
 	}
 
 	@Override
-	public UserInfoEntity removeUser(UserInfoEntity user) {
-		// TODO Auto-generated method stub
-		return null;
+	public StatusResponseDto deactivateUser(Long id) throws CustomResourceException {
+
+		// Query user and set user status to Status.INACTIVE
+		UserInfoEntity user = repository.findByUserId(id);
+		if (user != null) {
+			user.setIsActive(Status.INACTIVE.getKey());
+			user.setModifiedDatetime(localDateTimeConverter.convertToDatabaseColumn(LocalDateTime.now()));
+		} else {
+			String error = env.getProperty("error.resource.not_found.user");
+			throw new CustomResourceException(error);
+		}
+
+		// Save new status
+		UserInfoEntity updatedUser = repository.save(user);
+		if (updatedUser.getIsActive() == Status.ACTIVE.getKey()) {
+			String error = env.getProperty("error.resource.deactivate.user_failed");
+			Throwable cause = new Throwable(env.getProperty("error.resource.deactivate.user_cause"));
+			throw new CustomResourceException(error, cause);
+		}
+		
+		// Create response instance
+		StatusResponseDto response = new StatusResponseDto();
+		response.setStatus(env.getProperty("info.success"));
+		response.setMessage(env.getProperty("info.resource.deactivated.user_success"));
+		
+		return response;
 	}
 
 	@Override

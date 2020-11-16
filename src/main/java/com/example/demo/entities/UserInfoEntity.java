@@ -42,6 +42,9 @@ public class UserInfoEntity {
 	@Column(name = "IMAGE_URL", nullable = false, length = 500)
     private String imageUrl;
 	
+	@Column(name = "IS_ACTIVE", nullable = false)
+    private Integer isActive;
+	
 	@Column(name = "CREATED_DATETIME", nullable = false)
     private Timestamp createdDatetime;
 	

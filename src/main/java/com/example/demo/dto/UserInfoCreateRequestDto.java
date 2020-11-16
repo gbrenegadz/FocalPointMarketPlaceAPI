@@ -2,6 +2,7 @@ package com.example.demo.dto;
 
 import java.time.LocalDateTime;
 
+import com.example.demo.enums.Status;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sun.istack.NotNull;
@@ -37,6 +38,9 @@ public class UserInfoCreateRequestDto {
 	@NotNull
 	@JsonProperty("imageUrl")
     private String imageUrl;
+	
+	@JsonIgnore
+    private Integer isActive = Status.ACTIVE.getKey();
 	
 	@JsonIgnore
     private final LocalDateTime createdDatetime = LocalDateTime.now();

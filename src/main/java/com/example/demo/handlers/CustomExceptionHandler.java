@@ -1,9 +1,10 @@
 package com.example.demo.handlers;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +20,8 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+import com.example.demo.exceptions.CustomResourceException;
 
 /**
  * 
@@ -132,12 +135,13 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 	}
 	
 	/**
-	 * Default Handler
+	 * Resource Not Found Error Handler
 	 */
-	@ExceptionHandler({ ResourceNotFoundException.class })
-	public ResponseEntity<Object> handleResourceNotFound(ResourceNotFoundException ex, WebRequest request) {
+	@ExceptionHandler({ CustomResourceException.class })
+	public ResponseEntity<Object> handleResourceNotFound(CustomResourceException ex, WebRequest request) {
+		
 	    ApiError apiError = new ApiError(
-	      HttpStatus.INTERNAL_SERVER_ERROR, ex.getLocalizedMessage(), ex.getClass().getCanonicalName());
+	      HttpStatus.INTERNAL_SERVER_ERROR, ex.getLocalizedMessage(), ex.getCause().toString());
 	    return new ResponseEntity<Object>(
 	      apiError, new HttpHeaders(), apiError.getStatus());
 	}
@@ -148,8 +152,18 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 	@ExceptionHandler({ Exception.class })
 	public ResponseEntity<Object> handleAll(Exception ex, WebRequest request) {
 	    ApiError apiError = new ApiError(
-	      HttpStatus.INTERNAL_SERVER_ERROR, ex.getLocalizedMessage(), ex.getClass().getCanonicalName());
+	      HttpStatus.INTERNAL_SERVER_ERROR, ex.getLocalizedMessage(), getStackTrace(ex));
 	    return new ResponseEntity<Object>(
 	      apiError, new HttpHeaders(), apiError.getStatus());
+	}
+	
+	
+	/*
+	 * Get stack trace as string
+	 */
+	private String getStackTrace(Exception ex) {
+		StringWriter sw = new StringWriter();
+		ex.printStackTrace(new PrintWriter(sw));
+        return sw.toString();
 	}
 }
