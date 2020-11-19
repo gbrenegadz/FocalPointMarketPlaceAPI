@@ -74,6 +74,7 @@ public class UserInfoServiceImpl implements UserInfoService {
 			throw new ResourceNotFoundException(error);
 		}
 
+		// Create response
 		UserInfoResponseDto updatedUser = new UserInfoResponseDto(repository.save(user));
 		return updatedUser;
 	}
@@ -121,6 +122,8 @@ public class UserInfoServiceImpl implements UserInfoService {
 
 	@Override
 	public Page<UserInfoEntity> listAllUsers(int pageNumber) {
+		// TODO update the query to filter Status. Get only active users
+		// Query users
 		PageRequest pageable = PageRequest.of(pageNumber, 10, Sort.by(UserInfoEntity.ID).ascending());
 		return repository.findAll(pageable);
 	}
