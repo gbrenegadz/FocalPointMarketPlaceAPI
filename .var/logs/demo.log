@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 2020-11-21 15:44:01.968  INFO 130 --- [restartedMain] c.b.focal_point_api.DemoApplication      : Starting DemoApplication on DESKTOP-KP2K1VN with PID 130 (/mnt/c/Users/Gilbert Renegado/Documents/BizEpic/focal_point_api/build/classes/java/main started by gbrenegadz in /mnt/c/Users/Gilbert Renegado/Documents/BizEpic/focal_point_api)
 2020-11-21 15:44:01.977  INFO 130 --- [restartedMain] c.b.focal_point_api.DemoApplication      : No active profile set, falling back to default profiles: default
 2020-11-21 15:44:02.047  INFO 130 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/gbrenegadz/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.3.0.0/967c0b1a2d5b1435324de34a9b8018d294f8f47b/ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/home/gbrenegadz/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.3.0.0/967c0b1a2d5b1435324de34a9b8018d294f8f47b/oraclepki.jar
@@ -264,6 +265,8 @@
 2020-11-21 23:27:44.590  INFO 1233 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
 2020-11-21 23:27:44.600  INFO 1233 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
 =======
+=======
+>>>>>>> 14591a0... final commit before actual
 2020-11-20 00:42:17.788  INFO 18052 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KP2K1VN with PID 18052 (C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo\bin\main started by Gilbert Renegado in C:\Users\Gilbert Renegado\Documents\Springboot\Getting Started\demo (1)\demo)
 2020-11-20 00:42:17.806  INFO 18052 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
 2020-11-20 00:42:17.887  INFO 18052 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Gilbert Renegado\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.3.0.0\967c0b1a2d5b1435324de34a9b8018d294f8f47b\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Gilbert%20Renegado/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.3.0.0/967c0b1a2d5b1435324de34a9b8018d294f8f47b/oraclepki.jar
@@ -1348,4 +1351,7 @@ Caused by: java.sql.SQLException: ORA-01109: database not open
 2020-11-20 00:55:00.098  INFO 16144 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2020-11-20 00:55:00.100  INFO 16144 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown initiated...
 2020-11-20 00:55:00.108  INFO 16144 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPoolBooks - Shutdown completed.
+<<<<<<< HEAD
+>>>>>>> 14591a0... final commit before actual
+=======
 >>>>>>> 14591a0... final commit before actual
