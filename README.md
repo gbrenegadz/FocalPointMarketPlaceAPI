@@ -1,2 +1,2 @@
-# demo_springboot
-This is a repository used during my learning stage for Spring Boot JPA
+# Focal Point Marketplace API
+This project will change the course B2B in the future
