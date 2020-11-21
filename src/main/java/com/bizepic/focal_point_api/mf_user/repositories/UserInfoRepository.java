@@ -1,4 +1,4 @@
-package com.bizepic.focal_point_api.repositories;
+package com.bizepic.focal_point_api.mf_user.repositories;
 
 import javax.transaction.Transactional;
 

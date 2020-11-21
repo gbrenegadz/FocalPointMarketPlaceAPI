@@ -1,16 +1,16 @@
-package com.bizepic.focal_point_api.services;
+package com.bizepic.focal_point_api.mf_user.service;
 
 import java.util.List;
 
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
 import org.springframework.data.domain.Page;
 
+import com.bizepic.focal_point_api.common.dto.StatusResponseDto;
 import com.bizepic.focal_point_api.common.entities.UserInfoEntity;
 import com.bizepic.focal_point_api.common.exceptions.CustomResourceException;
-import com.bizepic.focal_point_api.dto.StatusResponseDto;
-import com.bizepic.focal_point_api.dto.UserInfoCreateRequestDto;
-import com.bizepic.focal_point_api.dto.UserInfoResponseDto;
-import com.bizepic.focal_point_api.dto.UserInfoUpdateRequestDto;
+import com.bizepic.focal_point_api.mf_user.dto.UserInfoCreateRequestDto;
+import com.bizepic.focal_point_api.mf_user.dto.UserInfoResponseDto;
+import com.bizepic.focal_point_api.mf_user.dto.UserInfoUpdateRequestDto;
 
 /**
  * 

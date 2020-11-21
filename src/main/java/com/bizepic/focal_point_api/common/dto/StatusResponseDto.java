@@ -1,4 +1,4 @@
-package com.bizepic.focal_point_api.dto;
+package com.bizepic.focal_point_api.common.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

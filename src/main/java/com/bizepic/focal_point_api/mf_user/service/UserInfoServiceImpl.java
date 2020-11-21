@@ -1,4 +1,4 @@
-package com.bizepic.focal_point_api.services;
+package com.bizepic.focal_point_api.mf_user.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -12,15 +12,15 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
+import com.bizepic.focal_point_api.common.dto.StatusResponseDto;
 import com.bizepic.focal_point_api.common.entities.UserInfoEntity;
 import com.bizepic.focal_point_api.common.enums.Status;
 import com.bizepic.focal_point_api.common.exceptions.CustomResourceException;
 import com.bizepic.focal_point_api.common.utils.LocalDateTimeAttributeConverterUtil;
-import com.bizepic.focal_point_api.dto.StatusResponseDto;
-import com.bizepic.focal_point_api.dto.UserInfoCreateRequestDto;
-import com.bizepic.focal_point_api.dto.UserInfoResponseDto;
-import com.bizepic.focal_point_api.dto.UserInfoUpdateRequestDto;
-import com.bizepic.focal_point_api.repositories.UserInfoRepository;
+import com.bizepic.focal_point_api.mf_user.dto.UserInfoCreateRequestDto;
+import com.bizepic.focal_point_api.mf_user.dto.UserInfoResponseDto;
+import com.bizepic.focal_point_api.mf_user.dto.UserInfoUpdateRequestDto;
+import com.bizepic.focal_point_api.mf_user.repositories.UserInfoRepository;
 
 /**
  * 

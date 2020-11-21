@@ -1,4 +1,4 @@
-package com.bizepic.focal_point_api.api;
+package com.bizepic.focal_point_api.mf_user.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.bizepic.focal_point_api.common.dto.StatusResponseDto;
 import com.bizepic.focal_point_api.common.entities.UserInfoEntity;
 import com.bizepic.focal_point_api.common.exceptions.CustomResourceException;
-import com.bizepic.focal_point_api.dto.StatusResponseDto;
-import com.bizepic.focal_point_api.dto.UserInfoCreateRequestDto;
-import com.bizepic.focal_point_api.dto.UserInfoResponseDto;
-import com.bizepic.focal_point_api.dto.UserInfoUpdateRequestDto;
-import com.bizepic.focal_point_api.services.UserInfoService;
+import com.bizepic.focal_point_api.mf_user.dto.UserInfoCreateRequestDto;
+import com.bizepic.focal_point_api.mf_user.dto.UserInfoResponseDto;
+import com.bizepic.focal_point_api.mf_user.dto.UserInfoUpdateRequestDto;
+import com.bizepic.focal_point_api.mf_user.service.UserInfoService;
 
 import lombok.extern.slf4j.Slf4j;
 
